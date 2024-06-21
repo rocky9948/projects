@@ -1,0 +1,53 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+
+   <div class="container">
+    <div class="row">
+        <div class="col-sm-6 mt-5"><img src="{% static 'images/register.jpeg' %}" class="img rounded-circle mt-5 w-100" alt=""></div>
+        <div class="col-sm-6"> 
+            <h1 class="text-center">RE<span class="badge bg-primary">GIST</span>ER</h1>
+            <form action="">
+               <div >
+                <input name="fullname" id="fullnameid" class="form-control border b-5 mb-2 border-black" type="text" placeholder="fullname:">
+                <input name="email" id="emailid" class="form-control border b-5 mb-2 border-black" type="email" placeholder="email:">
+                <input name="phone" id="phoneid" class="form-control border b-5 mb-2 border-black" type="text" placeholder="phone:">
+                <input name="address" id="addressid" class="form-control border b-5 mb-2 border-black" type="text" placeholder="address:">
+                <input name="password" id="password" class="form-control border b-5 mb-2 border-black" type="password" placeholder="password:">
+               </div>
+               <div>
+                <select class="form-select mb-2 border b-2 border-black" name="country"  id="countryid">
+                    <option value="-">country</option>
+                    <option value="country">INDIA</option>
+                    <option value="country">UAE</option>
+                    <option value="country">RUSSIA</option>
+                    <option value="country">USA</option>
+                </select>
+               </div>
+               <div class="mb-2 border b-5 border-black rounded-2">
+                <label class="d-block h6" for="input">QUALIFICATION</label>
+                <input class="form-check-inline" name="qualification" id="c1" type="checkbox">DEGREE
+                <input class="form-check-inline" name="qualification" id="c2" type="checkbox">P.G
+                <input class="form-check-inline" name="qualification" id="c3" type="checkbox">B.TECH
+                <input class="form-check-inline" name="qualification" id="c4" type="checkbox">MBA
+            
+
+               </div>
+               <div class="border b-5 border-black mb-2 rounded-2">
+                <label class="d-block h6" for="">GENDER</label>
+                <input class="form-check-inline" type="radio" name="" id="">MALE
+                <input class="form-check-inline" type="radio" name="" id="">FEMALE
+                <input class="form-check-inline" type="radio" name="" id="">OTHERS
+            
+               </div>
+               <div>
+                <button class="btn btn-primary" type="submit">REGISTER </button>
+                <button class="btn btn-danger" type="reset">RESET</button>
+               </div>
+               
+            </form>
+        </div>
+
+   </div>
+{% endblock content %}

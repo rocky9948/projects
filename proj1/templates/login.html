@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+   <div class="container">
+    <div class="row">
+        <div class="col-sm-6 mt-5"><img src=" {% static 'images/login.jpeg' %}" class="img rounded-circle ml-5 w-50" alt=""></div>
+        <div class="col-sm-6"> 
+            <h1 class="text-center">LOGIN<span class="badge bg-primary">GIST</span></h1>
+            <form action="">
+               <div >
+                <input name="userid" id="id" class="form-control border b-5 mb-2 border-black" type="text" placeholder="userid:">
+                <input name="password" id="password" class="form-control border b-5 mb-2 border-black" type="password" placeholder="password:">
+               </div>
+               <div class="text-center">
+                <button class="btn btn-primary">LOGIN</button>
+                <button class="btn btn-danger">FORGOT PASSWORD</button>
+               </div>
+            </form>
+        </div>
+
+   </div>
+
+{% endblock content %}
